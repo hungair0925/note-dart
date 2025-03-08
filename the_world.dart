@@ -24,12 +24,18 @@ String setColor(AnsiEscapeColorCode color) {
 }
 
 void dioPrint(String text, {bool isSpecial = false}) {
-  String color = isSpecial ? setColor(AnsiEscapeColorCode.backgroundYellow) : setColor(AnsiEscapeColorCode.yellow);
+  String color =
+      isSpecial
+          ? setColor(AnsiEscapeColorCode.backgroundYellow)
+          : setColor(AnsiEscapeColorCode.yellow);
   print("DIO) $color$text" + resetColor());
 }
 
 void jotaroPrint(String text, {bool isSpecial = false}) {
-  String color = isSpecial ? setColor(AnsiEscapeColorCode.backgroundBlue) : setColor(AnsiEscapeColorCode.blue);
+  String color =
+      isSpecial
+          ? setColor(AnsiEscapeColorCode.backgroundBlue)
+          : setColor(AnsiEscapeColorCode.blue);
   print("承太郎) $color$text" + resetColor());
 }
 
